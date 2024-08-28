@@ -1,0 +1,28 @@
+sudo apt-get install minicom
+
+sudo service NetworkManager stop
+sudo ifconfig eth0 up              (se usar adaptador dar ifconfig, e substituir o q aparece)
+sudo ifconfig eth0 192.1.1.x/24    (x = 1 para simplificar)
+
+minicom -D /dev/ttyUSB0
+
+... copiar slides
+
+show ip int br
+
+#
+	Interface                  IP-Address      OK? Method Status                Protocol
+	FastEthernet0/0            192.1.1.51      YES manual up                    up      
+	FastEthernet0/1            unassigned      YES unset  administratively down down    
+	Serial0/0/0                unassigned      YES unset  administratively down down    
+#
+
+
+SWITCH
+
+
+minicom -D /dev/ttyUSB0
+config ipif System ipaddress 192.1.1.21/24 
+
+show fdb ( ou http://192.1.1.21 [sem password] )
+

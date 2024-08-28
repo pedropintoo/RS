@@ -1,0 +1,51 @@
+Dec 17 19:09:40.724 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 17 19:09:40.724 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34689.
+Dec 17 19:09:40.734 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 19:09:40.734 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P8/bgpIpv4/project-files/dynamips 
+Dec 17 19:09:40.734 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P8/bgpIpv4/project-files/dynamips
+Dec 17 19:09:40.734 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P8/bgpIpv4/project-files/dynamips/0a59a8ef-f55f-4b9d-a9c2-bb7b2f1b89c6 
+Dec 17 19:09:40.735 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P8/bgpIpv4/project-files/dynamips/0a59a8ef-f55f-4b9d-a9c2-bb7b2f1b89c6
+Dec 17 19:09:40.735 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Dec 17 19:09:40.735 VM: VM R2 created.
+Dec 17 19:09:40.735 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5004 
+Dec 17 19:09:40.735 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Dec 17 19:09:40.736 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.736 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Dec 17 19:09:40.736 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x601712a8 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm set_ios R2 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.2532.0000 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.737 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:40.738 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Dec 17 19:09:41.122 HYPERVISOR: exec_cmd: nio create_udp udp-237c39e4-b512-47c2-88a1-c91337b591a3 10006 127.0.0.1 10007 
+Dec 17 19:09:41.330 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-237c39e4-b512-47c2-88a1-c91337b591a3 
+Dec 17 19:09:41.330 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:41.419 HYPERVISOR: exec_cmd: nio create_udp udp-a8762509-7b66-4938-93c9-3c9959ac062f 10014 127.0.0.1 10015 
+Dec 17 19:09:41.421 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-a8762509-7b66-4938-93c9-3c9959ac062f 
+Dec 17 19:09:41.421 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:59.387 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 17 19:09:59.388 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P8/bgpIpv4/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Dec 17 19:09:59.388 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 19:09:59.389 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Dec 17 19:09:59.390 HYPERVISOR: exec_cmd: vm start R2 
+Dec 17 19:10:29.633 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 21:06:28.630 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 21:06:28.630 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 17 21:06:28.735 VM: VM R2 shutdown.
+Dec 17 21:06:28.735 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 21:06:29.027 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 21:06:29.028 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 21:06:29.030 HYPERVISOR: exec_cmd: vm delete R2 
+Dec 17 21:06:29.030 VM: VM R2 destroyed.
+Dec 17 21:06:29.031 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 17 21:06:29.038 HYPERVISOR: Stopped.
+Dec 17 21:06:29.038 GENERAL: reset done.

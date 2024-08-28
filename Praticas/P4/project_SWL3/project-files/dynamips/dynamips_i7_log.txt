@@ -1,0 +1,25 @@
+Oct 18 16:42:13.092 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 18 16:42:13.092 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54383.
+Oct 18 16:42:13.094 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 18 16:42:13.094 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P4/project_SWL3/project-files/dynamips 
+Oct 18 16:42:13.094 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P4/project_SWL3/project-files/dynamips
+Oct 18 16:42:13.094 HYPERVISOR: exec_cmd: ethsw create SW1 
+Oct 18 16:42:13.171 HYPERVISOR: exec_cmd: nio create_udp udp-7a9f50a8-5eb2-45a5-8d92-122b8f4b87f2 10013 127.0.0.1 10012 
+Oct 18 16:42:13.171 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-7a9f50a8-5eb2-45a5-8d92-122b8f4b87f2 
+Oct 18 16:42:13.181 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-7a9f50a8-5eb2-45a5-8d92-122b8f4b87f2 1 
+Oct 18 16:42:13.201 HYPERVISOR: exec_cmd: nio create_udp udp-d27c26c5-9517-4163-ae01-ce1669fc4028 10015 127.0.0.1 10014 
+Oct 18 16:42:13.201 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-d27c26c5-9517-4163-ae01-ce1669fc4028 
+Oct 18 16:42:13.221 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-d27c26c5-9517-4163-ae01-ce1669fc4028 2 
+Oct 18 16:42:13.242 HYPERVISOR: exec_cmd: nio create_udp udp-aa1360e0-caaa-4d0d-8e35-c3a28942cff7 10017 127.0.0.1 10016 
+Oct 18 16:42:13.242 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-aa1360e0-caaa-4d0d-8e35-c3a28942cff7 
+Oct 18 16:42:13.262 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-aa1360e0-caaa-4d0d-8e35-c3a28942cff7 3 
+Oct 18 16:42:13.279 HYPERVISOR: exec_cmd: nio create_udp udp-8f1dc6c2-a9af-4091-ae3d-b164e8d70a21 10018 127.0.0.1 10019 
+Oct 18 16:42:13.279 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-8f1dc6c2-a9af-4091-ae3d-b164e8d70a21 
+Oct 18 16:42:13.282 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-8f1dc6c2-a9af-4091-ae3d-b164e8d70a21 1 
+Oct 18 16:42:13.665 HYPERVISOR: exec_cmd: nio create_udp udp-60221d66-b956-410f-9922-db20da1c9508 10027 127.0.0.1 10026 
+Oct 18 16:42:13.665 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-60221d66-b956-410f-9922-db20da1c9508 
+Oct 18 16:42:13.686 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-60221d66-b956-410f-9922-db20da1c9508 1 
+Oct 18 16:47:50.464 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Oct 18 16:47:50.552 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 18 16:47:50.933 HYPERVISOR: Stopped.
+Oct 18 16:47:50.933 GENERAL: reset done.

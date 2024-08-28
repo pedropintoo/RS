@@ -1,0 +1,53 @@
+Nov 13 12:23:31.696 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 13 12:23:31.696 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51695.
+Nov 13 12:23:31.705 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 13 12:23:31.705 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips 
+Nov 13 12:23:31.705 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips
+Nov 13 12:23:31.706 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips/69050061-71ed-42b0-8fe0-733644767b4c 
+Nov 13 12:23:31.706 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips/69050061-71ed-42b0-8fe0-733644767b4c
+Nov 13 12:23:31.706 HYPERVISOR: exec_cmd: vm create Router2 2 c7200 
+Nov 13 12:23:31.706 VM: VM Router2 created.
+Nov 13 12:23:31.706 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5004 
+Nov 13 12:23:31.706 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router2 
+Nov 13 12:23:31.706 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-FE 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x601712a8 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router2 ca02.12c8.0000 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm set_nvram Router2 512 
+Nov 13 12:23:31.707 HYPERVISOR: exec_cmd: vm set_ram Router2 512 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm slot_remove_binding Router2 0 0 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-2FE 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 PA-2FE-TX 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:31.708 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 2 0 PA-2FE-TX 
+Nov 13 12:23:31.982 HYPERVISOR: exec_cmd: nio create_udp udp-5bbc816f-a1eb-4182-87e9-ab7ec3d5872b 10004 127.0.0.1 10005 
+Nov 13 12:23:32.189 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 1 0 udp-5bbc816f-a1eb-4182-87e9-ab7ec3d5872b 
+Nov 13 12:23:32.190 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:32.216 HYPERVISOR: exec_cmd: nio create_udp udp-9ca2b573-eef3-4e65-af68-2b036d1ed359 10008 127.0.0.1 10009 
+Nov 13 12:23:32.218 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 1 1 udp-9ca2b573-eef3-4e65-af68-2b036d1ed359 
+Nov 13 12:23:32.218 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:45.006 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+Nov 13 12:23:45.007 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 13 12:23:45.007 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:23:45.007 HYPERVISOR: exec_cmd: vm set_config Router2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Nov 13 12:23:45.007 HYPERVISOR: exec_cmd: vm start Router2 
+Nov 13 12:24:15.253 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Nov 13 12:26:45.269 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Nov 13 12:36:45.314 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Nov 13 12:57:02.111 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:57:02.111 HYPERVISOR: exec_cmd: vm stop Router2 
+Nov 13 12:57:02.212 VM: VM Router2 shutdown.
+Nov 13 12:57:02.213 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Nov 13 12:57:02.938 HYPERVISOR: exec_cmd: vm get_status Router2 
+Nov 13 12:57:02.939 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Nov 13 12:57:02.940 HYPERVISOR: exec_cmd: vm delete Router2 
+Nov 13 12:57:02.940 VM: VM Router2 destroyed.
+Nov 13 12:57:02.941 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 13 12:57:03.036 HYPERVISOR: Stopped.
+Nov 13 12:57:03.036 GENERAL: reset done.

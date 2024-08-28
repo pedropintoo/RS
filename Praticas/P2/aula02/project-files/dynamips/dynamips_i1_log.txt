@@ -1,0 +1,25 @@
+Oct 09 10:19:46.363 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 09 10:19:46.363 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45719.
+Oct 09 10:19:46.366 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 10:19:46.366 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips 
+Oct 09 10:19:46.366 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips
+Oct 09 10:19:46.367 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips/14261b83-9009-42d1-8f88-b9493cc070d9 
+Oct 09 10:19:46.367 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips/14261b83-9009-42d1-8f88-b9493cc070d9
+Oct 09 10:19:46.367 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Oct 09 10:19:46.367 VM: VM R1 created.
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: vm set_ios R1 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Oct 09 10:19:46.368 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Oct 09 10:19:46.369 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Oct 09 10:19:46.369 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 09 10:19:46.556 HYPERVISOR: exec_cmd: vm set_ios R1 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Oct 09 10:19:51.648 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 09 10:19:51.648 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 09 10:19:51.649 HYPERVISOR: exec_cmd: vm delete R1 
+Oct 09 10:19:51.649 VM: VM R1 destroyed.
+Oct 09 10:19:51.649 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 09 10:19:51.873 HYPERVISOR: Stopped.
+Oct 09 10:19:51.873 GENERAL: reset done.

@@ -1,0 +1,22 @@
+Oct 09 10:21:25.137 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 09 10:21:25.137 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40033.
+Oct 09 10:21:25.146 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 10:21:25.147 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips 
+Oct 09 10:21:25.147 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips
+Oct 09 10:21:25.147 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips/8b678355-02d6-4870-b59f-249c9b8e9545 
+Oct 09 10:21:25.147 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P2/aula02/aula02/project-files/dynamips/8b678355-02d6-4870-b59f-249c9b8e9545
+Oct 09 10:21:25.147 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Oct 09 10:21:25.147 VM: VM R1 created.
+Oct 09 10:21:25.148 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 09 10:21:25.148 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Oct 09 10:21:25.148 HYPERVISOR: exec_cmd: vm set_ios R1 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 09 10:21:25.148 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 09 10:21:25.149 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 09 10:21:25.180 HYPERVISOR: exec_cmd: vm set_ios R1 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 09 10:22:18.638 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 09 10:22:18.638 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 09 10:22:18.639 HYPERVISOR: exec_cmd: vm delete R1 
+Oct 09 10:22:18.639 VM: VM R1 destroyed.
+Oct 09 10:22:18.639 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 09 10:22:18.713 HYPERVISOR: Stopped.
+Oct 09 10:22:18.714 GENERAL: reset done.

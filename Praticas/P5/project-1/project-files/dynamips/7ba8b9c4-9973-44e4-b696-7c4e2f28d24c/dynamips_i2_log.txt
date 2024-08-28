@@ -1,0 +1,72 @@
+Oct 23 11:31:33.209 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 23 11:31:33.209 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54727.
+Oct 23 11:31:33.218 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 23 11:31:33.219 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips 
+Oct 23 11:31:33.219 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips
+Oct 23 11:31:33.219 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/7ba8b9c4-9973-44e4-b696-7c4e2f28d24c 
+Oct 23 11:31:33.219 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/7ba8b9c4-9973-44e4-b696-7c4e2f28d24c
+Oct 23 11:31:33.220 HYPERVISOR: exec_cmd: vm create ESW2 2 c3725 
+Oct 23 11:31:33.220 VM: VM ESW2 created.
+Oct 23 11:31:33.220 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Oct 23 11:31:33.221 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Oct 23 11:31:33.221 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:31:33.222 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:31:33.222 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60a6a1e0 
+Oct 23 11:31:33.222 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Oct 23 11:31:33.223 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Oct 23 11:31:33.224 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:31:33.224 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Oct 23 11:31:33.256 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:31:37.285 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:31:41.144 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:32:02.698 HYPERVISOR: exec_cmd: nio create_udp udp-c80ee131-be87-433e-bd5f-f4ed2bd4eeec 10010 127.0.0.1 10011 
+Oct 23 11:32:02.906 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-c80ee131-be87-433e-bd5f-f4ed2bd4eeec 
+Oct 23 11:32:02.907 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:32:08.399 HYPERVISOR: exec_cmd: nio create_udp udp-d5fe2d3b-a72e-4701-969d-f6f89e43807f 10016 127.0.0.1 10017 
+Oct 23 11:32:08.401 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 2 udp-d5fe2d3b-a72e-4701-969d-f6f89e43807f 
+Oct 23 11:32:08.401 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:33:11.742 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Oct 23 11:33:11.742 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 23 11:33:11.743 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:33:11.744 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i2_startup-config.cfg 
+Oct 23 11:33:11.744 HYPERVISOR: exec_cmd: vm start ESW2 
+Oct 23 11:37:05.755 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:45:42.218 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 23 11:45:42.219 HYPERVISOR: exec_cmd: vm stop ESW2 
+Oct 23 11:45:42.310 VM: VM ESW2 shutdown.
+Oct 23 11:45:42.311 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 23 11:45:59.149 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:45:59.149 HYPERVISOR: exec_cmd: vm rename ESW2 Switch2 
+Oct 23 11:45:59.180 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:46:19.569 HYPERVISOR: exec_cmd: vm set_ghost_status Switch2 2 
+Oct 23 11:46:19.569 HYPERVISOR: exec_cmd: vm set_ghost_file Switch2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 23 11:46:19.569 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 23 11:46:19.569 HYPERVISOR: exec_cmd: vm set_config Switch2 configs/i2_startup-config.cfg 
+Oct 23 11:46:19.570 HYPERVISOR: exec_cmd: vm start Switch2 
+Oct 23 11:50:59.939 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 23 11:50:59.939 HYPERVISOR: exec_cmd: vm stop Switch2 
+Oct 23 11:51:00.039 VM: VM Switch2 shutdown.
+Oct 23 11:51:00.039 HYPERVISOR: exec_cmd: vm extract_config Switch2 
+Oct 23 11:51:02.980 HYPERVISOR: exec_cmd: vm set_ghost_status Switch2 2 
+Oct 23 11:51:02.980 HYPERVISOR: exec_cmd: vm set_ghost_file Switch2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 23 11:51:02.981 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 23 11:51:02.981 HYPERVISOR: exec_cmd: vm set_config Switch2 configs/i2_startup-config.cfg 
+Oct 23 11:51:02.982 HYPERVISOR: exec_cmd: vm start Switch2 
+Oct 23 11:53:31.033 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:53:59.509 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 23 11:53:59.510 HYPERVISOR: exec_cmd: vm stop Switch2 
+Oct 23 11:53:59.606 VM: VM Switch2 shutdown.
+Oct 23 11:53:59.607 HYPERVISOR: exec_cmd: vm extract_config Switch2 
+Oct 23 11:54:18.867 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:20.860 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:23.728 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:27.424 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:31.450 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:38.616 HYPERVISOR: exec_cmd: vm set_ios Switch2 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:54:38.617 HYPERVISOR: exec_cmd: vm rename Switch2 Switch1 
+Oct 23 11:54:38.660 HYPERVISOR: exec_cmd: vm set_ios Switch1 /home/pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 23 11:55:11.005 HYPERVISOR: exec_cmd: vm set_ghost_status Switch1 2 
+Oct 23 11:55:11.005 HYPERVISOR: exec_cmd: vm set_ghost_file Switch1 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P5/project-1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 23 11:55:11.006 HYPERVISOR: exec_cmd: vm get_status Switch1 
+Oct 23 11:55:11.006 HYPERVISOR: exec_cmd: vm set_config Switch1 configs/i2_startup-config.cfg 
+Oct 23 11:55:11.006 HYPERVISOR: exec_cmd: vm start Switch1 

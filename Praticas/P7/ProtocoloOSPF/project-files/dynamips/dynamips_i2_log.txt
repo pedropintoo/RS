@@ -1,0 +1,35 @@
+Jan 21 15:20:45.405 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 21 15:20:45.405 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58305.
+Jan 21 15:20:45.415 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 21 15:20:45.415 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips 
+Jan 21 15:20:45.415 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips
+Jan 21 15:20:45.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips/5dd5c789-c3db-4137-b233-26af25e06253 
+Jan 21 15:20:45.416 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloOSPF/project-files/dynamips/5dd5c789-c3db-4137-b233-26af25e06253
+Jan 21 15:20:45.416 HYPERVISOR: exec_cmd: vm create Router1 1 c7200 
+Jan 21 15:20:45.416 VM: VM Router1 created.
+Jan 21 15:20:45.417 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router1 5003 
+Jan 21 15:20:45.417 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router1 
+Jan 21 15:20:45.417 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.417 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 0 0 C7200-IO-FE 
+Jan 21 15:20:45.417 HYPERVISOR: exec_cmd: vm set_disk0 Router1 0 
+Jan 21 15:20:45.418 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.418 HYPERVISOR: exec_cmd: vm set_idle_pc Router1 0x601712a8 
+Jan 21 15:20:45.419 HYPERVISOR: exec_cmd: vm set_ios Router1 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 21 15:20:45.420 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router1 ca01.0cae.0000 
+Jan 21 15:20:45.420 HYPERVISOR: exec_cmd: vm set_nvram Router1 512 
+Jan 21 15:20:45.420 HYPERVISOR: exec_cmd: vm set_ram Router1 512 
+Jan 21 15:20:45.420 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.420 HYPERVISOR: exec_cmd: vm slot_remove_binding Router1 0 0 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 0 0 C7200-IO-2FE 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 1 0 PA-2FE-TX 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.421 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 2 0 PA-2FE-TX 
+Jan 21 15:20:45.429 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 21 15:20:45.429 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jan 21 15:20:45.429 HYPERVISOR: exec_cmd: vm delete Router1 
+Jan 21 15:20:45.429 VM: VM Router1 destroyed.
+Jan 21 15:20:45.429 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 21 15:20:45.915 HYPERVISOR: Stopped.
+Jan 21 15:20:45.915 GENERAL: reset done.

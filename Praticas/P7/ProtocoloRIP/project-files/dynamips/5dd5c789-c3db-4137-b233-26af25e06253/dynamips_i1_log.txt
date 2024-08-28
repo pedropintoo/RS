@@ -1,0 +1,21 @@
+Nov 18 22:56:27.513 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 18 22:56:27.513 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42959.
+Nov 18 22:56:27.519 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 18 22:56:27.519 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIP/project-files/dynamips 
+Nov 18 22:56:27.519 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIP/project-files/dynamips
+Nov 18 22:56:27.519 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Nov 18 22:56:28.617 HYPERVISOR: exec_cmd: nio create_udp udp-c57bef88-d5f5-4ca5-8872-ed07e493267c 10013 127.0.0.1 10012 
+Nov 18 22:56:28.617 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-c57bef88-d5f5-4ca5-8872-ed07e493267c 
+Nov 18 22:56:28.636 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-c57bef88-d5f5-4ca5-8872-ed07e493267c 1 
+Nov 18 22:56:28.680 HYPERVISOR: exec_cmd: nio create_udp udp-17af4d43-004d-4f38-ac94-7400740b38d2 10014 127.0.0.1 10015 
+Nov 18 22:56:28.680 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-17af4d43-004d-4f38-ac94-7400740b38d2 
+Nov 18 22:56:28.696 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-17af4d43-004d-4f38-ac94-7400740b38d2 1 
+Nov 18 22:56:28.750 HYPERVISOR: exec_cmd: nio create_udp udp-f0d5b249-8fb0-4d9d-98a8-88f8096b4486 10019 127.0.0.1 10018 
+Nov 18 22:56:28.750 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-f0d5b249-8fb0-4d9d-98a8-88f8096b4486 
+Nov 18 22:56:28.757 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-f0d5b249-8fb0-4d9d-98a8-88f8096b4486 1 
+Nov 18 22:56:35.252 HYPERVISOR: exec_cmd: nio bind_filter udp-f0d5b249-8fb0-4d9d-98a8-88f8096b4486 2 capture 
+Nov 18 22:56:35.252 HYPERVISOR: exec_cmd: nio setup_filter udp-f0d5b249-8fb0-4d9d-98a8-88f8096b4486 2 en10mb /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIP/project-files/captures/Router3_FastEthernet10_to_Switch1_Ethernet2.pcap 
+Nov 18 23:21:12.219 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Nov 18 23:21:12.280 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 18 23:21:12.748 HYPERVISOR: Stopped.
+Nov 18 23:21:12.748 GENERAL: reset done.

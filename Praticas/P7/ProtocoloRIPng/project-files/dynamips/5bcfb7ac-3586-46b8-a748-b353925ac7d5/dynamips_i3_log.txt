@@ -1,0 +1,51 @@
+Nov 19 10:45:05.353 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 19 10:45:05.353 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33497.
+Nov 19 10:45:05.363 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 10:45:05.364 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIPng/project-files/dynamips 
+Nov 19 10:45:05.364 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIPng/project-files/dynamips
+Nov 19 10:45:05.364 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIPng/project-files/dynamips/ac507357-591c-4c05-bda7-a867cd693aec 
+Nov 19 10:45:05.364 GENERAL: working_dir=/home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIPng/project-files/dynamips/ac507357-591c-4c05-bda7-a867cd693aec
+Nov 19 10:45:05.364 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Nov 19 10:45:05.365 VM: VM R2 created.
+Nov 19 10:45:05.365 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5004 
+Nov 19 10:45:05.365 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Nov 19 10:45:05.365 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.365 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Nov 19 10:45:05.366 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 19 10:45:05.367 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.367 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x601712a8 
+Nov 19 10:45:05.368 HYPERVISOR: exec_cmd: vm set_ios R2 /home/pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.203e.0000 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.369 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Nov 19 10:45:05.370 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.370 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Nov 19 10:45:05.370 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:05.370 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Nov 19 10:45:05.830 HYPERVISOR: exec_cmd: nio create_udp udp-9da394fc-4877-40dc-a3bb-ee5af24b98cd 10010 127.0.0.1 10011 
+Nov 19 10:45:06.063 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-9da394fc-4877-40dc-a3bb-ee5af24b98cd 
+Nov 19 10:45:06.064 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:06.113 HYPERVISOR: exec_cmd: nio create_udp udp-f588f73e-e93c-454e-b1a9-4b4a5579c1ba 10014 127.0.0.1 10015 
+Nov 19 10:45:06.114 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-f588f73e-e93c-454e-b1a9-4b4a5579c1ba 
+Nov 19 10:45:06.115 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:08.904 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 19 10:45:08.905 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/pedro/Documents/Universidade/2ano/1semestre/RS/Praticas/P7/ProtocoloRIPng/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 19 10:45:08.905 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 10:45:08.906 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Nov 19 10:45:08.906 HYPERVISOR: exec_cmd: vm start R2 
+Nov 19 10:45:39.155 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 19 11:05:00.635 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 11:05:00.635 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 19 11:05:00.744 VM: VM R2 shutdown.
+Nov 19 11:05:00.744 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 19 11:05:01.370 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 19 11:05:01.371 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 19 11:05:01.372 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 19 11:05:01.372 VM: VM R2 destroyed.
+Nov 19 11:05:01.372 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 11:05:01.807 HYPERVISOR: Stopped.
+Nov 19 11:05:01.807 GENERAL: reset done.
